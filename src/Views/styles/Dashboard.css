@@ -1,0 +1,30 @@
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side__pannel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    height: 100vh;
+    max-width: 30%;
+    min-width: 300px;
+}
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__view {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.profile__image {
+    border-radius: 100%;
+}
