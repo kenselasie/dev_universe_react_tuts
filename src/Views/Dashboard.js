@@ -14,7 +14,7 @@ function Dashboard() {
                             Michael Something
                         </div>
                         <div style={{ margin: '10px 0 10px 0' }}>
-                            <Link to="/todo">My Profile</Link> 
+                            <Link style={{textDecoration: 'none', color: 'blue'}} to="/todo">My Profile</Link> 
                         </div>
                     </section>
                     
@@ -22,8 +22,8 @@ function Dashboard() {
                         <hr style={{ margin: '30px 0 30px 0', width: '200px' }}/>
                     </div>
 
-                    <div>
-                        <strong>Menu</strong>
+                    <div className="menu__text">
+                        <strong>MENU</strong>
                     </div>
 
                     <div className='menu__items'>
@@ -37,18 +37,19 @@ function Dashboard() {
                     </div>
 
                     <div className='bottom__btns'>
-                        <button>Upgrade Plan</button>
-                        <button>Contact Support</button>
+                        <button className='btn btn1'>Upgrade Plan</button>
+                        <button className='btn btn2'>Contact Support</button>
                     </div>
                 
                 </div>
                 <div className='main__view'>
-                    <div className='header'>
-                        header
-                    </div>
-                    <div className='view'>
+                    <section className='header'>
+                        <div><h2>Overview</h2> </div>
+                        <div style={{marginRight: '150px', fontSize: '20px', fontWeight: '300'}}>...</div>
+                    </section>
+                    <section className='view'>
                         view
-                    </div>
+                    </section>
                 </div>
             </div>
             

@@ -1,16 +1,24 @@
 .wrapper2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: rgb(242, 246, 250);
 }
 
 .side__pannel {
     display: flex;
     flex-direction: column;
-    background-color: rgb(219, 219, 219);
+    background-color: white;
     height: 100vh;
-    max-width: 30%;
-    min-width: 300px;
+    max-width: 30vw;
+    width: 30vw;
+    min-width: 250px;
+}
+.menu__text {
+    font-weight: 800;
+    margin-left: 50px; 
+}
+.menu__items {
+    margin-left: 50px; 
 }
 .profile_info {
     display: flex;
@@ -21,10 +29,51 @@
 .main__view {
     display: flex;
     flex-direction: column;
+    max-width: 70vw;
+    min-width: 100%;
 }
-
-
 
 .profile__image {
     border-radius: 100%;
+}
+
+.bottom__btns {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0 0 0;
+}
+
+.btn {
+    margin: 10px
+}
+
+.btn1 {
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1:hover {
+    background-color: rgb(62, 141, 245);
+}
+.btn2 {
+    height: 50px;
+    color: blue;
+    background-color: rgb(237, 244, 250);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2:hover {
+    background-color: rgb(212, 230, 246);
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 30px;
+    /* background-color: red; */
 }
