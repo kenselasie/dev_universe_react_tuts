@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles/Dashboard.css'
+import Table from '../Components/Table'
+import MainView from '../Components/MainView'
 import { Link } from 'react-router-dom'
 function Dashboard() {
     return (
@@ -49,7 +51,15 @@ function Dashboard() {
                         <div style={{marginRight: '150px', fontSize: '20px', fontWeight: '300'}}>...</div>
                     </section>
                     <section className='view'>
-                        view
+                        <div>
+                            <MainView />
+                        </div>
+                        
+                    </section>
+                    <section className='table__container'>
+                        <div className='table'>
+                            <Table />
+                        </div>
                     </section>
                 </div>
             </div>
