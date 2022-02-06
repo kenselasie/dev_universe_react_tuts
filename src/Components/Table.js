@@ -45,7 +45,7 @@ function Table() {
                     <div>
                         <strong>189</strong>
                     </div>
-                    <div>Users</div>
+                    <div>Users Name</div>
                 </section>
             </td>
         </tr>
