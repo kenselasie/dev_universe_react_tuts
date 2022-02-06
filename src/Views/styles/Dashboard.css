@@ -77,3 +77,15 @@
     margin-left: 30px;
     /* background-color: red; */
 }
+
+.view {
+   display: flex;
+   justify-content: center;
+    height: 30vh;
+}
+
+.table__container {
+    margin-top:450px ;
+    display: flex;
+    justify-content: center;
+}
