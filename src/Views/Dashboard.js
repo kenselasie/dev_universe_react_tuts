@@ -33,7 +33,8 @@ function Dashboard() {
                         <p>Deleted</p>
                         <p>Favourites</p>
                         <p>Analytics</p>
-                        <p>Settings</p>
+                        <p>Changes</p>
+                        <p>Income</p>
                     </div>
 
                     <div className='bottom__btns'>
