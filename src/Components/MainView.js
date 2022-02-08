@@ -23,13 +23,15 @@ ChartJS.register(
     indexAxis: 'x',
     elements: {
       bar: {
-        borderWidth: 2,
+        borderWidth: 0,
       },
     },
     responsive: true,
+    maintainAspectRatio: false,
+    
     plugins: {
       legend: {
-        position: 'right',
+        position: 'top',
       },
       title: {
         display: false,
@@ -38,29 +40,29 @@ ChartJS.register(
     },
   };
   
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
+  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   
   export const data = {
     labels,
     datasets: [
       {
         label: 'Dataset 1',
-        data: [90, 120, 32, 34, 43, 3],
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        data: [40, 63, 19, 54, 23, 43, 17, 20, 60, 38, 52, 12],
+        backgroundColor: '#5f95fa71',
       },
       {
         label: 'Dataset 2',
-        data: [100, 14, 23, 122, 10, 3],
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        data: [35, 80, 32, 34, 43, 3, 34, 14, 80, 60, 22, 19],
+        backgroundColor: '#f5373750',
       },
+
+
     ],
   };
   
 function MainView() {
     return (
-        <div style={{height: '30vh', width: '65vw'}}>
+        <div className='main_view'>
              <Bar options={options} data={data} />
         </div>
     )
