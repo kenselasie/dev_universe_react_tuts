@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 50px 10px 50px;
-    width: 80%;
+    width: 85%;
 }
+
 
 .users_column{
     display: flex;

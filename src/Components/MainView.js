@@ -27,9 +27,11 @@ ChartJS.register(
       },
     },
     responsive: true,
+    maintainAspectRatio: false,
+    
     plugins: {
       legend: {
-        position: 'right',
+        position: 'top',
       },
       title: {
         display: false,
@@ -45,12 +47,12 @@ ChartJS.register(
     datasets: [
       {
         label: 'Dataset 1',
-        data: [40, 80, 32, 34, 43, 3, 34, 14, 80, 60, 22, 19],
+        data: [40, 63, 19, 54, 23, 43, 17, 20, 60, 38, 52, 12],
         backgroundColor: '#5f95fa71',
       },
       {
         label: 'Dataset 2',
-        data: [40, 80, 32, 34, 43, 3, 34, 14, 80, 60, 22, 19],
+        data: [35, 80, 32, 34, 43, 3, 34, 14, 80, 60, 22, 19],
         backgroundColor: '#f5373750',
       },
 

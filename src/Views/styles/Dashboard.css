@@ -159,9 +159,13 @@ a{
 }
 
 .main_view{
+    display: flex;
     margin: 30px;
     width: 75vw;
+    height: 60vh;
+    justify-content: center;
 }
+
 
 .table__container {
     margin-top:50px ;

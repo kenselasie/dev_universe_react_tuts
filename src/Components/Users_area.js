@@ -2,7 +2,8 @@ import './users_area.css'
 
 function Users_area() {
     return (
-        <>
+        <>  
+            
             <div className='users_area'>
                         
                         
