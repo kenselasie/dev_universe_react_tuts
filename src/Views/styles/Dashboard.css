@@ -20,16 +20,27 @@ a{
     display: flex;
     flex-direction: row;
     background-color: #a3cef828;
+}
+
+.decoy_with_chart{
+    display:flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.menu_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .side__pannel {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     height: 100vh;
-    max-width: 30vw;
-    width:16vw;
+    width:17vw;
     position: fixed;
 }
 
@@ -38,8 +49,7 @@ a{
     flex-direction: column;
     background-color: white;
     height: 100vh;
-    max-width: 30vw;
-    width:16vw;
+    width:20vw;
 }
 
 .user_image{
@@ -55,11 +65,11 @@ a{
 }
 .menu__text {
     font-weight: 800;
-    margin-left: 70px; 
+    margin-left: 5vw; 
     margin-bottom: 10px;
 }
 .menu__items {
-    margin-left: 70px; 
+    margin-left: 5vw; 
 }
 .profile_info {
     display: flex;
@@ -73,10 +83,18 @@ a{
     margin-top: 10px;
     margin-bottom: 1px;
 }
+
+.main__view_h{
+    display: flex;
+    justify-content: center;
+    background-color: #a3cef828;
+    width: 100%;
+}
+
+
 .main__view {
     display: flex;
     flex-direction: column;
-    width: 80vw;
     background-color: white;
     margin: 20px;
 }

@@ -10,30 +10,41 @@ function Todo() {
         getTodosFromAPI()
     }, [])
 
-    const deleteTodo = (todo) => {
-        console.log(todo)
+    const deleteTodo = (i) => {
+        console.log(i)
         // Pass todo to the delete API here
-
+        let del_todolist_item = todoList
+        del_todolist_item.splice(i,1)
+        setTodoList([...del_todolist_item])
         // Call getTodosFromAPI again to load latest change
-        getTodosFromAPI()
     }
 
     const checkTodoAsCompleted = (todo) => {
         // Got to API and edit the todo
-
-        // Call getTodosFromAPI again to load latest change
-        getTodosFromAPI()
+        if(todo.completed){
+            todo.completed = false
+        }
+        else{todo.completed = true}
+        setTodoList([...todoList])
+        // call setTodoList in order to load changes
     }
 
+
     const addTodoToAPI = () => {
-        console.log(todoInput)
-        let updatedTodo = [...todoList]
-        updatedTodo.push({
-            id: '343493',
-            todoItem: todoInput,
-            completed: false
-        })
-        setTodoList(updatedTodo)
+        if(todoInput.length <= 0){
+            alert('please enter todo')
+        }
+        else{
+            console.log(todoInput)
+            let updatedTodo = [...todoList]
+            updatedTodo.push({
+                id: '343493',
+                todoItem: todoInput,
+                completed: false
+            })
+            setTodoList(updatedTodo)
+            setTodoInput('')
+        }
     }
 
     const getTodosFromAPI = async () => {
@@ -55,6 +66,8 @@ function Todo() {
             console.error(error);
           }
     }
+    let todo_key = 0
+
 
     if (todoList.length > 0) return (
         <div className="wrapper">
@@ -79,9 +92,11 @@ function Todo() {
                                     { todo.completed ? 
                                         <p className="todo__text"><del>{todo.todoItem}</del></p> 
                                         : 
-                                        <p className="todo__text">{todo.todoItem}</p>}   
+                                        <p className="todo__text">{todo.todoItem}</p>
+                                    }   
                                 </div>
-                                <button onClick={() => deleteTodo(todo)} className="delete__btn">X</button>
+                                <button onClick={() => deleteTodo(i)} className="delete__btn">X</button>
+                                
                             </div>
                         </div>
                     ))
